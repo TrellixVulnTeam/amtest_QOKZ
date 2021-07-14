@@ -15,7 +15,7 @@ export function buscarPersonajes() {
 	return (dispatch) => {
 		dispatch(fetchAllCharacteres());
 		try {
-			fetch("http://hp-api.herokuapp.com/api/characters")
+			fetch("https://hp-api.herokuapp.com/api/characters")
 				.then((response) => response.json())
 				.then((data) => {
 					data = data.map((obj, idx) => ({ ...obj, id: idx, favorite: false }));
