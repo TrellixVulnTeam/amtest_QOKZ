@@ -1,0 +1,41 @@
+@import "../../scss/variables.scss";
+
+.bar-container {
+	display: flex;
+	position: fixed;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1;
+	@media screen and (min-width: $xsmall) {
+		position: absolute;
+		right: 0;
+		top: 0;
+		bottom: auto;
+		left: auto;
+		transform: none;
+	}
+	.dropdown {
+		.dropdown-toggle {
+			background: none;
+			border: none;
+			border-radius: 0;
+			padding: 0;
+			&::after {
+				display: none;
+			}
+			.bar-button {
+				border-bottom-right-radius: 0;
+				border-top-right-radius: 0;
+			}
+		}
+		.dropdown-menu {
+			width: 280px;
+			background-color: $purple;
+			color: #FFF;
+            padding: 0 10px;
+            @media screen and (min-width: $xsmall) {
+            }
+		}
+	}
+}

@@ -1,0 +1,17 @@
+.fav-item{
+    padding:10px;
+    border-bottom: solid 1px #403B6D;
+    display: flex;
+    justify-content: space-between;
+    &.last-child{
+        border-bottom: none;
+    }
+    .main-pic{
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+    }
+    .trash-icon{
+        cursor: pointer;
+    }
+}

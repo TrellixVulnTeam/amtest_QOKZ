@@ -1,0 +1,105 @@
+@import "../../scss/variables.scss";
+
+.hp-card {
+	background-color: transparent;
+	margin-bottom: 50px;
+	.row {
+		margin-right: 0;
+		margin-left: 0;
+		.card-img {
+			background: linear-gradient(135deg, #ff0000 0%, #fed482 100%);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 16px 16px 0 0;
+			padding: 15px;
+			@media screen and (min-width: $medium) {
+				border-radius: 16px 0 0 16px;
+			}
+			&.slytherine {
+				background: linear-gradient(135deg, #1c792b 0%, #82e95e 100%);
+			}
+			&.ravenclaw {
+				background: linear-gradient(135deg, #0597b7 0%, #66d1ff 100%);
+			}
+			&.hufflepuff {
+				background: linear-gradient(135deg, #ffc700 0%, #fff388 100%);
+			}
+			.card-img-container {
+				position: relative;
+				width: 160px;
+				height: 160px;
+				overflow: hidden;
+				border-radius: 50%;
+				.main-pic {
+					width: 100%;
+					height: auto;
+				}
+			}
+		}
+		.card-body {
+			position: relative;
+			background-color: #fff;
+			border-radius: 0 0 16px 16px;
+			display: flex;
+			flex-direction: column-reverse;
+			padding: 15px;
+			&.death {
+				background-color: #ccc;
+				h3::before {
+					content: "+ ";
+				}
+			}
+			@media screen and (min-width: $medium) {
+				border-radius: 0 16px 16px 0;
+			}
+			@media screen and (min-width: $small) {
+				display: block;
+				padding: 25px;
+			}
+			.fav-icon {
+				position: absolute;
+				cursor: pointer;
+				right: 15px;
+				bottom: 15px;
+				@media screen and (min-width: $small) {
+					top: 15px;
+					right: 15px;
+				}
+			}
+			h3 {
+				font-size: 18px;
+				margin-bottom: 10px;
+				text-align: center;
+				@media screen and (min-width: $small) {
+					font-size: 30px;
+					text-align: left;
+					margin: 20px 0;
+				}
+			}
+			p {
+				margin-bottom: 0;
+				font-size: 14px;
+				display: none;
+				&.top {
+					color: #999;
+					text-transform: uppercase;
+					display: flex;
+					flex-direction: column;
+				}
+				span {
+					text-transform: capitalize;
+				}
+				@media screen and (min-width: $small) {
+					display: block;
+					&.top {
+						display: block;
+						span:first-child::after {
+							content: " / ";
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,16 @@
+@import "./variables.scss";
+
+body {
+	margin: 0;
+	font-family: "Open Sans";
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: #000 !important;
+	@media screen and (min-width: $xsmall) {
+		background-image: url("../assets/background.jpeg");
+		background-position-x: center;
+		background-position-y: top;
+		background-repeat: no-repeat;
+	}
+}

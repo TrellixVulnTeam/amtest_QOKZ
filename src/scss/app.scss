@@ -1,0 +1,21 @@
+@import './variables.scss';
+
+header {
+	div.header {
+        text-align: center;
+		img {
+			margin-top: 30px;
+			margin-bottom: 7px;
+            @media screen  and (min-width: $xsmall) {
+                margin-top: 142px;
+                margin-bottom: 31px;
+            }
+		}
+		h1 {
+			font-weight: bold;
+			font-size: 36px;
+			line-height: 25px;
+			color: #fff;
+		}
+	}
+}

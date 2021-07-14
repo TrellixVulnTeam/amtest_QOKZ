@@ -1,0 +1,36 @@
+@import "../../scss/variables.scss";
+
+.bar-button {
+	background-color: $purple;
+	color: #fff;
+	text-align: center;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 25px;
+	text-align: center;
+	color: #ffffff;
+	text-transform: uppercase;
+	padding: 6px 15px;
+	display: flex;
+	cursor: pointer;
+	width: 140px;
+	&:first-child {
+		border-top-left-radius: 10px;
+	}
+	&:last-child {
+		border-top-right-radius: 10px;
+	}
+	img {
+		margin-left: 5px;
+	}
+	@media screen and (min-width: $xsmall) {
+		&:first-child {
+			border-top-left-radius: 0;
+			border-bottom-left-radius: 10px;
+		}
+		&:last-child {
+			border-bottom-right-radius: 10px;
+			border-top-right-radius: 0;
+		}
+	}
+}

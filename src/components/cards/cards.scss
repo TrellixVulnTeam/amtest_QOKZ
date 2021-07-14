@@ -1,0 +1,18 @@
+@import '../../scss/variables.scss';
+
+.buttons-container{
+	display: flex;
+	justify-content: center;
+	button{
+		margin:24px 0;
+		&:first-child{
+			margin-right:5px;
+		}
+		&:last-child{
+			margin-left:5px;
+		}
+		@media screen  and (min-width: $small) {
+			margin:60px;
+		}
+	}
+}
