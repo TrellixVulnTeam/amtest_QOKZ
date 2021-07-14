@@ -43,7 +43,7 @@ const Card = ({ person }) => {
 					<Col
 						lg={5}
 						className={classNames({
-							"card-img": true,
+							"card-image": true,
 							slytherine: house === "Slytherin",
 							hufflepuff: house === "Hufflepuff",
 							ravenclaw: house === "Ravenclaw",
