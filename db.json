@@ -1,0 +1,16 @@
+{
+  "characteres": [
+    {
+      "name": "Dolores",
+      "dateOfBirth": "2021-07-16",
+      "eyeColour": "Gray",
+      "hairColour": "Black",
+      "gender": "female",
+      "house": "Slytherin",
+      "hogwartsStudent": false,
+      "image": "http://hp-api.herokuapp.com/images/norris.JPG",
+      "alive": false,
+      "id": 25
+    }
+  ]
+}

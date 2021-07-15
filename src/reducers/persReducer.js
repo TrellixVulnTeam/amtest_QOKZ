@@ -13,7 +13,6 @@ import {
 //state
 const initialState = {
 	pers: [],
-	fav: [],
 	favcount: 0,
 	perscount: 0,
 	error: null,
