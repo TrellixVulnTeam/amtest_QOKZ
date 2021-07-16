@@ -34,10 +34,10 @@ const Cards = () => {
 			<section>
 				<div className="buttons-container">
 					<Button onClickFn={() => setFilter(filter === 1 ? 0 : 1)}>
-						Estudiantes
+						Vivos
 					</Button>
 					<Button onClickFn={() => setFilter(filter === 2 ? 0 : 2)}>
-						Staff
+						Muertos
 					</Button>
 				</div>
 			</section>
@@ -48,11 +48,11 @@ const Cards = () => {
 					<Row>
 						{characters.map((el) => {
 							if (filter === 1)
-								return el.hogwartsStudent ? (
+								return el.alive ? (
 									<Card key={el.id} person={el} />
 								) : null;
 							else if (filter === 2)
-								return !el.hogwartsStudent ? (
+								return !el.alive ? (
 									<Card key={el.id} person={el} />
 								) : null;
 							else return <Card key={el.id} person={el} />;
